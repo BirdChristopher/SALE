@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+int4_flash_attn/triton_impl/profile_result
+int4_flash_attn/triton_impl/sparse_attn_profile
+int4_flash_attn/triton_impl/__pycache__/
+experiments/niah
+hopper/
+tests/
+.clangd
+
+# IDE-related
+.idea/
+
+# Dev
+venv
+
+.DS_Store
