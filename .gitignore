@@ -19,6 +19,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.eggs
 
 int4_flash_attn/triton_impl/profile_result
 int4_flash_attn/triton_impl/sparse_attn_profile

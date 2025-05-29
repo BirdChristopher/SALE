@@ -51,8 +51,8 @@ attn_output = flash_attn_func_int4_skip_sage(
 ```
 ## Supported models
 Currently, our monkeypatch implementation supports the following models:
-- Llama-3.1-8B-Instruct
-- Qwen2.5-32B-Instruct
+- [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [Qwen/Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
 
 ## Installation
 ```
