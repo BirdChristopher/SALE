@@ -112,7 +112,6 @@ python parse_result.py \
 ```
 ### InfiniteBench evaluation
 - First, download the samples of [InfiniteBench](https://huggingface.co/datasets/xinrongzhang2022/InfiniteBench) and place the original JSON-formatted data to `experiments/infinite_bench/infinite_bench_data`
-- Second, download the evaluation metric scripts
 ```
 cd experiments/infinite_bench
 
