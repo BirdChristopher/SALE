@@ -17,7 +17,7 @@ V = torch.randn([1, 8, 32000, 128], dtype=torch.half).to("cuda")
 thresholds = Q.new_zeros([Q.shape[1]], dtype=torch.float32).fill_(0.004)
 
 # Full precision Computation Pass.
-attn_output = flash_attn_func_int4_skip_sage(
+attn_output = flash_attn_func_int4_skip(
     Q,K,V, 
     softmax_scale = None,
     causal = True, 
