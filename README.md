@@ -5,6 +5,7 @@ Code repository for paper: **SALE : Low-bit Estimation for Efficient Sparse Atte
 - `python == 3.10`
 - `gcc >= 9.4.0`
 - `CUDA >= 12.4`
+Our code currently only supports Ada architecture GPUs, as only these GPUs provide fast int4 GEMM support.
 
 ## Available API
 ```
