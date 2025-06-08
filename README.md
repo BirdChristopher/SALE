@@ -133,4 +133,4 @@ During the development of this work, we learned design ideas from the following 
 - [Needle-In-A-Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
 
 ## Citation
-If you find our work useful, please cite [our paper](https://arxiv.org/abs/2505.24179).
+If you find our work useful, please cite our paper.
