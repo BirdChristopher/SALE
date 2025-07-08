@@ -5,6 +5,7 @@ Code repository for paper: **SALE : Low-bit Estimation for Efficient Sparse Atte
 - `python == 3.10`
 - `gcc >= 9.4.0`
 - `CUDA >= 12.4`
+Our code currently only supports Ada architecture GPUs, as only these GPUs provide fast int4 GEMM support.
 
 ## Available API
 ```
@@ -17,7 +18,7 @@ V = torch.randn([1, 8, 32000, 128], dtype=torch.half).to("cuda")
 thresholds = Q.new_zeros([Q.shape[1]], dtype=torch.float32).fill_(0.004)
 
 # Full precision Computation Pass.
-attn_output = flash_attn_func_int4_skip_sage(
+attn_output = flash_attn_func_int4_skip(
     Q,K,V, 
     softmax_scale = None,
     causal = True, 
@@ -132,4 +133,4 @@ During the development of this work, we learned design ideas from the following 
 - [Needle-In-A-Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
 
 ## Citation
-If you find our work useful, please cite [our paper](https://arxiv.org/abs/2505.24179).
+If you find our work useful, please cite our paper.
